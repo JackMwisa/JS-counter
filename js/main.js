@@ -11,6 +11,11 @@ btns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
         styles = e.currentTarget.classList;
 
+
+        if (styles.contains("decrease")){
+            count--;
+            value.textContent = count;
+        };
     })
 
 });
